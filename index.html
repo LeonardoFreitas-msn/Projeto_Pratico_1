@@ -11,21 +11,6 @@
     !function(){var t={emoji:["🔥"],fontSize:"24px",lifeSpan:125,interval:25},e=t.emoji?t.emoji:["🔥"],i=t.interval?t.interval:25,n=window.innerWidth,o=(window.innerHeight,{x:n/2,y:n/2}),s=[];function a(t){n=window.innerWidth,window.innerHeight}let h=!1;function l(t){if(t.touches.length>0&&!h){for(var n=0;n<Math.min(t.touches.length,2);n++)c(t.touches[n].clientX,t.touches[n].clientY,e[Math.floor(Math.random()*e.length)]);h=!0,setTimeout(function(){h=!1},i)}}function r(t){o.x=t.pageX,o.y=t.pageY,h||(c(o.x,o.y,e[Math.floor(Math.random()*e.length)]),h=!0,setTimeout(function(){h=!1},i))}function c(t,e,i){var n=new f;n.init(t,e,i),s.push(n)}function d(){requestAnimationFrame(d),function(){for(var t=0;t<s.length;t++)s[t].update();for(t=s.length-1;t>=0;t--)s[t].lifeSpan<0&&(s[t].die(),s.splice(t,1))}()}function f(){this.lifeSpan=t.lifeSpan?t.lifeSpan:125,this.initialStyles={position:"absolute",display:"block",pointerEvents:"none","z-index":"10000000",fontSize:t.fontSize?t.fontSize:"80px","will-change":"transform"},this.init=function(t,e,i){this.velocity={x:(Math.random()<.5?-1:1)*(Math.random()/2),y:1},this.position={x:t-0,y:e-0},this.element=document.createElement("span"),this.element.innerHTML=i,function(t,e){for(var i in e)t.style[i]=e[i]}(this.element,this.initialStyles),this.update();const n=document.body;n.insertBefore(this.element,n.firstChild)},this.update=function(){this.position.x+=this.velocity.x,this.position.y+=this.velocity.y,this.lifeSpan--,this.element.style.transform="translate3d("+this.position.x+"px,"+this.position.y+"px,0) scale("+this.lifeSpan/120+")"},this.die=function(){this.element.parentNode.removeChild(this.element)}}document.addEventListener("mousemove",r),document.addEventListener("touchmove",l),document.addEventListener("touchstart",l),window.addEventListener("resize",a),d()}();
     </script> -->
 
-    <style>
-        ::-webkit-scrollbar {
-            width: 12px;
-            height: 12px;
-        }
-        ::-webkit-scrollbar-track-piece {
-            background: black;
-        }
-        ::-webkit-scrollbar-thumb {
-            background-image: url(./audiovisual/scrollbar.jpg);
-            border-radius: 7px;
-        }
-    </style>
-
-
 </head>
 <body>
     <header>
