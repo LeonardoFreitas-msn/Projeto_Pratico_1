@@ -8,6 +8,23 @@
     text-decoration: none;
 }
 
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track-piece {
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background-image: url(./audiovisual/scrollbar.jpg);
+    border-radius: 7px;
+}
+
+
+/* index.html */
+
 header {
     height: 60px;
     display: flex;
@@ -233,5 +250,125 @@ span {
         margin-top: 210px;
     }
 
+
 }
+
+/* Fotos.html */
+
+
+
+   #ul-img {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin: 10% 15% auto;
+   }
+   
+   @media(min-width: 512px) {
+    #ul-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+   }
+
+   @media(min-width: 768px) {
+    #ul-img {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 60px;
+    }
+   }
+
+   .li-img {
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .li-img:hover {
+    transform: scale(1.05);
+   }
+
+   .min{
+    width: 200px;
+    display: block;
+   }
+
+   .lbox{
+    visibility: hidden;
+    opacity: 0;
+    display: none
+   }
+
+   .lbox:target{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 60px;
+    left:30px;
+    background: rgba(10,10,10,0.7);
+    position: fixed;
+    display:block
+   }
+
+   .box_img {
+    width: 80%;
+    height: 50%;
+    margin: 0px auto;
+    
+   }
+
+   .btn{
+    color: aliceblue;
+    transition: .5s;
+
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+   }
+
+   .btn:hover {
+    color: brown;
+}
+
+   #prev {
+    left: 5%;
+    top: 45%;
+   }
+
+   #next {
+    right: 5%;
+    top: 45%;
+   }
+
+   #close {
+    right: 2%;
+    top: 0;
+   }
+
+   .box_img img{
+    opacity: 0;
+   }
+
+   .lbox:target .box_img img{
+    width: 80%;
+    margin-left: 100px;
+    margin-top: 60px;
+    opacity: 1;
+    transition: opacity .4s linear;
+   } 
+
+
+
+
+
 
