@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Prático 1</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- <script>
+    !function(){var t={emoji:["🔥"],fontSize:"24px",lifeSpan:125,interval:25},e=t.emoji?t.emoji:["🔥"],i=t.interval?t.interval:25,n=window.innerWidth,o=(window.innerHeight,{x:n/2,y:n/2}),s=[];function a(t){n=window.innerWidth,window.innerHeight}let h=!1;function l(t){if(t.touches.length>0&&!h){for(var n=0;n<Math.min(t.touches.length,2);n++)c(t.touches[n].clientX,t.touches[n].clientY,e[Math.floor(Math.random()*e.length)]);h=!0,setTimeout(function(){h=!1},i)}}function r(t){o.x=t.pageX,o.y=t.pageY,h||(c(o.x,o.y,e[Math.floor(Math.random()*e.length)]),h=!0,setTimeout(function(){h=!1},i))}function c(t,e,i){var n=new f;n.init(t,e,i),s.push(n)}function d(){requestAnimationFrame(d),function(){for(var t=0;t<s.length;t++)s[t].update();for(t=s.length-1;t>=0;t--)s[t].lifeSpan<0&&(s[t].die(),s.splice(t,1))}()}function f(){this.lifeSpan=t.lifeSpan?t.lifeSpan:125,this.initialStyles={position:"absolute",display:"block",pointerEvents:"none","z-index":"10000000",fontSize:t.fontSize?t.fontSize:"80px","will-change":"transform"},this.init=function(t,e,i){this.velocity={x:(Math.random()<.5?-1:1)*(Math.random()/2),y:1},this.position={x:t-0,y:e-0},this.element=document.createElement("span"),this.element.innerHTML=i,function(t,e){for(var i in e)t.style[i]=e[i]}(this.element,this.initialStyles),this.update();const n=document.body;n.insertBefore(this.element,n.firstChild)},this.update=function(){this.position.x+=this.velocity.x,this.position.y+=this.velocity.y,this.lifeSpan--,this.element.style.transform="translate3d("+this.position.x+"px,"+this.position.y+"px,0) scale("+this.lifeSpan/120+")"},this.die=function(){this.element.parentNode.removeChild(this.element)}}document.addEventListener("mousemove",r),document.addEventListener("touchmove",l),document.addEventListener("touchstart",l),window.addEventListener("resize",a),d()}();
+    </script> -->
+    <link rel="icon" href="./audiovisual/PP-180x180.png" sizes="32x32" />
+</head>
+<body>
+    <header>
+        <img id="logo" src="./audiovisual/logo.jpg" />
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./Fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./Comentarios.html">
+                    <li>Comentários</li>
+                </a>
+                <a href="./Contatos.html">
+                    <li>Contatos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="banner"></div>
+    <div id="trailer-container">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div class="content">
+            <video controls class="trailer"  autoplay="" loop="" muted="">
+                <source src="./audiovisual/A Ressurreição (2023) Trailer.mp4" type="video/mp4">
+                Seu navegador não possui suporte para vídeos.
+            </video>
+            <br /><br />
+            <div id="sinopse">
+                <p align= "justify" class="description">
+                    A Paixão de Cristo: A Ressurreição está chegando!<br/><br/>
+                    Após o filme A Paixão de Cristo lançado em 2004, diversos rumores surgiram de que haveria uma continuação, mas durante anos nada havia sido confirmado até que recentemente o diretor Mel Gibson afirmou que estava sim trabalhando num segundo filme e que este seria lançado em breve.<br/><br/>
+                    A continuação mostrará os acontecimentos dos três dias entre a crucificação e a ressurreição de Jesus Cristo.<br/>
+                </p>
+                <a href="https://beacons.ai/profissaoprogramador" target="_blank">
+                    <button class="button">Comprar ingresso</button>
+                </a>
+            </div> 
+        </div>
+     </div>
+
+     <div class="actor-cards-container">
+        <div class="cards-content">
+            <div class=" card banner-1">Hristo Jivkov como João</div>
+            <div class=" card banner-2" align= "center">&emsp; Jim Caviezel como Jesus Cristo</div>
+            <div class=" card banner-3">Mônica Bellucci como Maria Madalena</div>
+        </div>
+     </div>
+     
+     <br /><br /><br /><br /><br />
+
+     <footer>
+        <img style="object-fit: contain;" id="logo" src="./audiovisual/logo.jpg" />
+
+        <br /><br />
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./Fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./Comentarios.html">
+                    <li>Comentários</li>
+                </a>
+                <a href="./Contatos.html">
+                    <li>Contatos</li>
+                </a>
+            </ul>
+        </nav>
+
+        <br /><br />
+        <span align= "center">Todos os direitos reservados ©<br />
+        Desenvolvido por Leonardo Freitas, aluno do PROFISSÃO PROGRAMADOR</span>
+        <br /><br />
+            .
+
+    </footer>
+
+</body>
+</html>
