@@ -255,8 +255,6 @@ span {
 
 /* Fotos.html */
 
-
-
    #ul-img {
     width: 80%;
     display: grid;
@@ -340,7 +338,7 @@ span {
 
    .btn:hover {
     color: brown;
-}
+    }
 
    #prev {
     left: 5%;
@@ -368,5 +366,141 @@ span {
     opacity: 1;
     transition: opacity .4s linear;
     border-radius: 5px;
-
    } 
+
+/* Comentarios.html */
+
+#banner-coment {
+    background-image: url(./audiovisual/banner.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+
+.coment {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 980px;
+    padding: 20% 20% 0 0;
+    margin-left: 5%;
+    grid-gap: 40px;
+}
+
+
+@media(min-width: 560px) {
+    .coment {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   }
+
+@media(min-width: 870px) {
+.coment {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+}
+}
+
+
+
+
+.card-borda {
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    width: 250px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    grid-gap: 5%;
+    box-shadow: 7px 7px 10px rgba(10,10,10,0.7);
+
+}
+
+.card-borda:hover {
+    transform: scale(1.05);
+    color: #1A0816;
+}
+
+
+
+
+.card-coment {
+    background-color: aliceblue;
+
+    display: grid;
+
+    height: 170px;
+    width: 220px;
+    
+    padding: 35px 40%px;
+}
+
+.user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+h3 {
+    background-color: aliceblue;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 19px;
+
+
+}
+.stars {
+    background-color: aliceblue;
+}
+
+.star {
+    background-color: aliceblue;
+    width: 20px;
+}
+
+p-coment {
+    background-color: aliceblue;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 17px;
+}
+
+
+footer-coment {
+    height: 150px;
+    margin-top: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media(min-width: 150px) {
+footer-coment {
+    margin-top: 1100px;
+    }
+    }
+ 
+
+
+@media(min-width: 250px) {
+footer-coment {
+    margin-top: 1050px;
+    }
+   }
+
+@media(min-width: 560px) {
+footer-coment {
+    margin-top: 610px;
+}
+}
+
+@media(min-width: 870px) {
+footer-coment {
+    margin-top: 290px;
+}
+}
