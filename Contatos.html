@@ -37,14 +37,16 @@
             <div class="contact-borda">
 
                 <form class="contact-form" action="https://formsubmit.co/9a5aa258a9d737ecc0a76910c291ce75" method="POST">
-                    <label for="text">Nome</label>
-                    <input type="text" name="text" id="text" placeholder="Seu nome aqui" required>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="text" id="nome" placeholder="Seu nome aqui" required><br />
                     
                     <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="Endereço de e-mail" required>
                                         
                     <label for="message">Mensagem</label>
-                    <div class="divtex">
+                    <input type="text" name="message" id="message" placeholder="Escreva a sua mensagem" required>
+
+                    <!-- <div class="divtex">
                         <textarea 
                         rows="7"
                         maxlength="500"
@@ -53,9 +55,10 @@
                         required
                         ></textarea>
                         <p class="p-tex">(Máx. 500 caracteres, min. 20)</p>
-                    </div>
+                    </div> -->
                     
                     <input type="hidden" name="_next" value="https://leonardofreitas-msn.github.io/Projeto_Pratico_1/thanks.html">
+                    <input type="hidden" name="_subject" value="Novo envio - Projeto Prático 1">
 
                     <button type="submit" id="button-form">Enviar</button>
                 </form>
