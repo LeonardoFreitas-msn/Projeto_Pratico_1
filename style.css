@@ -22,7 +22,6 @@
     border-radius: 7px;
 }
 
-
 /* index.html */
 
 header {
@@ -118,6 +117,7 @@ li:hover {
     border: none;
     outline: none;
     margin-top: 25px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .button:hover {
@@ -250,7 +250,6 @@ span {
         margin-top: 210px;
     }
 
-
 }
 
 /* Fotos.html */
@@ -378,7 +377,6 @@ span {
     height: 400px;
 }
 
-
 .coment {
     background-color: transparent;
     display: grid;
@@ -389,22 +387,17 @@ span {
     grid-gap: 40px;
 }
 
-
 @media(min-width: 560px) {
-    .coment {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-   }
+.coment {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
 
 @media(min-width: 870px) {
 .coment {
     grid-template-columns: repeat(3, 1fr);
 }
 }
-
-
-
 
 .card-borda {
     background-color: aliceblue;
@@ -425,9 +418,6 @@ span {
     transform: scale(1.05);
     color: #1A0816;
 }
-
-
-
 
 .card-coment {
     background-color: aliceblue;
@@ -468,7 +458,6 @@ p-coment {
     font-size: 17px;
 }
 
-
 footer-coment {
     height: 150px;
     margin-top: 290px;
@@ -483,23 +472,156 @@ footer-coment {
     margin-top: 1100px;
     }
     }
- 
-
 
 @media(min-width: 250px) {
 footer-coment {
     margin-top: 1050px;
     }
-   }
+    }
 
 @media(min-width: 560px) {
 footer-coment {
     margin-top: 610px;
-}
-}
+    }
+    }
 
 @media(min-width: 870px) {
-footer-coment {
+    footer-coment {
     margin-top: 290px;
+    }
+    }
+
+/* Contatos.html */
+
+.contact {
+    background-color: transparent;
+    display: flex;
+    padding: 15% 20% 0 0;
+    margin-left: 5%;
+    grid-gap: 40px;
 }
+
+.contact-borda {
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 400px;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    grid-gap: 5%;
+    box-shadow: 7px 7px 10px rgba(10,10,10,0.7);
+}
+
+.divtex {
+    background-color: transparent;
+}
+
+.contact-form {
+    background-color: aliceblue;
+}
+
+.contact-form label {
+    background-color: aliceblue;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+}
+
+.contact-form input {
+    background-color: aliceblue;
+    width: 99%;
+    padding: 8px 0px;
+    margin: 8px 0px;
+}
+
+textarea {
+    background-color: aliceblue;
+    width: 99%;
+    resize: none;
+    padding: 8px 0px;
+    margin-top: 8px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+.p-tex {
+    background-color: aliceblue;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+#button-form {
+    width: 200px;
+    height: 40px;
+    background-color: brown;
+    color: aliceblue;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin: 15px 20px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#button-form:hover {
+    background-color: aliceblue;
+    color: black;
+    border: black solid;
+}
+
+footer-contact {
+    height: 125px;
+    margin-top: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media(min-width: 130px) {
+footer-contact {
+    margin-top: 125px;
+    }
+    }
+
+/* thanks.html */
+ 
+.thanks-borda {
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 400px;
+    height: 310px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    grid-gap: 5%;
+    box-shadow: 7px 7px 10px rgba(10,10,10,0.7);
+    transition: 1s;
+    color: brown;
+}
+
+.thanks-borda:hover {
+    background-color: aliceblue;
+    transform: scale(1.05);
+    color: #ec8d0e;
+}
+
+.thanks-borda h1 {
+    background-color: aliceblue;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.thanks-borda h2 {
+    background-color: aliceblue;
+    font-family: 'PT Sans', sans-serif;
 }
